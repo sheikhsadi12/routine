@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Settings, BookOpen, Clock, Target } from 'lucide-react';
 import SettingsModal from './SettingsModal';
+import IconicLogo from './IconicLogo';
 
 export default function Header() {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
@@ -13,10 +14,13 @@ export default function Header() {
         <div className="absolute bottom-0 left-0 w-24 h-24 bg-purple-500/10 rounded-full blur-2xl -ml-10 -mb-10 pointer-events-none"></div>
         
         <div className="flex justify-between items-start relative z-10">
-          <div>
-            <div className="text-[10px] text-primary tracking-[3px] font-bold mb-1 uppercase">HSC 2026 · Starts March 28</div>
-            <div className="text-xl font-bold text-text-main mb-3 flex items-center gap-2">
-              Master Study Routine
+          <div className="flex items-center gap-4">
+            <IconicLogo className="w-12 h-12" />
+            <div>
+              <div className="text-[10px] text-primary tracking-[3px] font-bold mb-1 uppercase">HSC 2026 · Starts March 28</div>
+              <div className="text-xl font-bold text-text-main mb-3 flex items-center gap-2">
+                Master Study Routine
+              </div>
             </div>
           </div>
           <button 

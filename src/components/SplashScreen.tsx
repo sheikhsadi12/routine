@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Trophy, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
+import IconicLogo from './IconicLogo';
 
 export default function SplashScreen({ onComplete }: { onComplete: () => void }) {
   const [show, setShow] = useState(true);
@@ -36,8 +37,8 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
               transition={{ type: 'spring', damping: 12, stiffness: 200 }}
               className="relative"
             >
-              <div className="bg-primary/20 p-6 rounded-[2rem] border border-primary/30 backdrop-blur-xl shadow-2xl">
-                <Trophy className="w-16 h-16 text-primary" />
+              <div className="bg-primary/20 p-8 rounded-[2.5rem] border border-primary/30 backdrop-blur-xl shadow-2xl">
+                <IconicLogo className="w-24 h-24" />
               </div>
               <motion.div
                 animate={{ rotate: 360 }}
