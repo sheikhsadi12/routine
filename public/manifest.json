@@ -1,0 +1,22 @@
+{
+  "name": "HSC 2026 Routine",
+  "short_name": "HSC Routine",
+  "description": "Premium HSC 2026 Study Routine and Progress Tracker",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080d1a",
+  "theme_color": "#64b5f6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://picsum.photos/seed/hsc/192/192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://picsum.photos/seed/hsc/512/512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
